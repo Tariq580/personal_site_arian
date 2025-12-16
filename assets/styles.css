@@ -1,8 +1,8 @@
 .container {
-    max-width: 100%;
-    width: 1200px;
+    max-width: none;
+    width: 100%;
     padding: 20px;
-    margin: 40px auto;
+    margin: 0;
     box-sizing: border-box;
     border-style: solid;
     border-width: 2px;
@@ -11,4 +11,15 @@
 
 }
 
-body {background: #f9f9f9;}
+body {background: #f9f9f9;
+       margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    background: #f9f9f9;
+}
