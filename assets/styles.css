@@ -4,12 +4,13 @@ body {
 }
 
 .container {
-    width: 100%;
-    min-height: 100vh;    /* ensures full viewport height but allows growth */
+    width: 90%;                 
+    max-width: 1000px;          
+    min-height: calc(100vh - 80px); 
     padding: 20px;
-    margin: 0;
+    margin: 40px auto;         
     box-sizing: border-box;
     border: 1px solid #000;
-    background: #f9f9f9;
-    
+    background: #ffffff;        
+    border-radius: 6px;
 }
