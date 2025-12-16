@@ -5,13 +5,23 @@ body {
 }
 
 .container {
+    display: flex;
+    gap: 20px;           /* space between columns */
+    align-items: flex-start;
+    justify-content: center;
     width: 90%;
     max-width: 1000px;
-    min-height: auto;          /* grows with content */
+    margin: 40px auto;
     padding: 20px;
-    margin: 0 auto;            /* only center horizontally */
     box-sizing: border-box;
-    border: 1px solid #000;
-    background: #ffffff;
-    border-radius: 6px;
+}
+
+.column {
+    flex: 0 0 30%;       /* fixed ~30% column */
+    box-sizing: border-box;
+}
+
+.column1 {
+    flex: 1 1 70%;       /* takes remaining space */
+    box-sizing: border-box;
 }
