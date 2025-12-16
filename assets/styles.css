@@ -1,16 +1,17 @@
 body {
     margin: 0;
+    padding: 40px;             /* creates space around the whole page */
     background: #f9f9f9;
 }
 
 .container {
-    width: 90%;                 
-    max-width: 1000px;          
-    min-height: calc(100vh - 80px); 
+    width: 90%;
+    max-width: 1000px;
+    min-height: auto;          /* grows with content */
     padding: 20px;
-    margin: 40px auto;         
+    margin: 0 auto;            /* only center horizontally */
     box-sizing: border-box;
     border: 1px solid #000;
-    background: #ffffff;        
+    background: #ffffff;
     border-radius: 6px;
 }
