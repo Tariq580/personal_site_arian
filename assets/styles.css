@@ -1,15 +1,15 @@
 body {
     margin: 0;
-    background: #eeeeee; /* lighter gray for page */
+    background: #f9f9f9;
 }
 
 .container {
     width: 100%;
-    min-height: 100vh;
+    min-height: 100vh;    /* ensures full viewport height but allows growth */
     padding: 20px;
     margin: 0;
     box-sizing: border-box;
-    border: 2px solid #000000;
-    background: #ffffff; /* container white */
-    outline: 4px solid rgba(255,0,0,0.15); /* debug outline */
+    border: 1px solid #000;
+    background: #f9f9f9;
+    
 }
