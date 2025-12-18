@@ -17,14 +17,19 @@ body {
 }
 
 .column {
-    flex: 0 0 30%;       /* fixed ~30% column */
+    flex: 0 0 30%;
     box-sizing: border-box;
-    img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-    }
+}
+
+/* moved/valid selector — limits image size so it won't cover the page */
+.column img,
+.profile-photo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-height: 400px;    /* adjust as needed (e.g. 300px, 50vh) */
+    object-fit: cover;    /* preserves aspect ratio while filling the box */
 }
 
 .column1 {
