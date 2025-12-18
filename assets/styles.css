@@ -26,14 +26,34 @@ body {
 /* moved/valid selector — limits image size so it won't cover the page */
 
 .profile-photo {
-    width: 150px;
+    width: 130px;
     height: auto;
     display: block;
     margin: 0 auto;
-      
+    border-radius: 6px;
+    margin-bottom: 30px;
 }
 
 .column1 {
     flex: 1 1 70%;       /* takes remaining space */
     box-sizing: border-box;
+}
+
+.column a {
+    display: block;
+    margin-top: 10px;
+    color: #359aff;         
+    text-decoration: none;  
+    text-align: center;     
+    font-size: 12px;
+
+}
+
+.title-sep {
+    border: 0;
+    height: 2px;
+    background: #e6e6e6;
+    margin: 4px 0 20px; /* top / left-right / bottom */
+    border-radius: 1px;
+    width: 100%;         /* or set a fixed width like 80% */
 }
