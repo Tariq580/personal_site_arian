@@ -6,27 +6,27 @@ body {
 
 .container {
     display: flex;
-    gap: 20px;           /* space between columns */
+    gap: 30px;           /* space between columns */
     align-items: flex-start;
-    justify-content: center;
     width: 90%;
     max-width: 1000px;
     margin: 40px auto;
     padding: 20px;
     box-sizing: border-box;
     background-color: #f9f9f9;
-    border: 1px solid #000000;
+    border: 1px solid #eee;
 }
 
 .column {
     flex: 0 0 30%;
     box-sizing: border-box;
+    width: 240px;
 }
 
 /* moved/valid selector — limits image size so it won't cover the page */
-.column img,
+
 .profile-photo {
-    width: 50px;
+    width: 220px;
     height: auto;
     display: block;
     margin: 0 auto;
