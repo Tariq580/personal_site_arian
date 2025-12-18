@@ -26,12 +26,11 @@ body {
 /* moved/valid selector — limits image size so it won't cover the page */
 .column img,
 .profile-photo {
-    max-width: 100%;
+    width: 50px;
     height: auto;
     display: block;
     margin: 0 auto;
-    max-height: 400px;    /* adjust as needed (e.g. 300px, 50vh) */
-    object-fit: cover;    /* preserves aspect ratio while filling the box */
+      
 }
 
 .column1 {
