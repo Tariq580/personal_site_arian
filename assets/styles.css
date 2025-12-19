@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 40px;             /* creates space around the whole page */
-    background: #f9f9f9;
+    background: #eee;
 }
 
 .container {
@@ -13,46 +13,44 @@ body {
     margin: 40px auto;
     padding: 20px;
     box-sizing: border-box;
-    background-color: #f8f8f8;
-    border: 1px solid #000000;
+    background-color: #fff;
+    border: 1px solid #5f5f5f;
 }
 
-.column {
-    flex: 0 0 30%;
+.left_column {
     box-sizing: border-box;
     width: 240px;
+    padding-top: 20px;
 }
 
 /* moved/valid selector — limits image size so it won't cover the page */
 
 .profile-photo {
-    width: 130px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 6px;
-    margin-bottom: 30px;
+  width: 150px;
+  height:auto;
+  display:block;
+  margin: 0 0 15px 0;
 }
 
-.column1 {
-    flex: 1 1 70%;       /* takes remaining space */
+.right_column {
+    flex: 1 ;       /* takes remaining space */
     box-sizing: border-box;
 }
 
-.column a {
+.left_column a {
     display: block;
-    margin-top: 10px;
+    margin: 4px 0;
     color: #359aff;         
     text-decoration: none;  
-    text-align: center;     
+    text-align: left;     
     font-size: 12px;
 
 }
 
 .title-sep {
     border: 0;
-    height: 2px;
-    background: #e6e6e6;
+    border-top: 1px solid #ddd;
+    height: 1px;
     margin: 4px 0 20px; /* top / left-right / bottom */
     border-radius: 1px;
     width: 100%;         /* or set a fixed width like 80% */
@@ -62,4 +60,5 @@ body {
     color: #01834a;
     font-weight: bold;
     margin-bottom: 10px;
+    margin: 0 0 10px;
 }
