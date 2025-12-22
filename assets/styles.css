@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 40px;             /* creates space around the whole page */
-    background: #eee;
+    background: #fafafa;
 }
 
 .container {
@@ -14,23 +14,11 @@ body {
     padding: 20px;
     box-sizing: border-box;
     background-color: #fff;
-    border: 1px solid #5f5f5f;
-}
-
-.left_column {
-    box-sizing: border-box;
-    width: 240px;
-    padding-top: 20px;
+    border: 1px solid #c3c3c3;
 }
 
 /* moved/valid selector — limits image size so it won't cover the page */
 
-.profile-photo {
-  width: 150px;
-  height:auto;
-  display:block;
-  margin: 0 0 15px 0;
-}
 
 .right_column {
     flex: 1 ;       /* takes remaining space */
@@ -39,19 +27,24 @@ body {
 
 .left_column a {
     display: block;
-    margin: 4px 0;
-    color: #359aff;         
-    text-decoration: none;  
-    text-align: left;     
+    margin: 2px 0;
+    color: #0000ee;         
+    text-decoration: underline;  
+    text-align: center;     
     font-size: 12px;
 
+}
+
+.right_column p {
+    line-height: 1.55;
+    margin: 0 0 16px;
 }
 
 .title-sep {
     border: 0;
     border-top: 1px solid #ddd;
     height: 1px;
-    margin: 4px 0 20px; /* top / left-right / bottom */
+    margin: 4px 0 12px; /* top / left-right / bottom */
     border-radius: 1px;
     width: 100%;         /* or set a fixed width like 80% */
 }
@@ -61,4 +54,31 @@ body {
     font-weight: bold;
     margin-bottom: 10px;
     margin: 0 0 10px;
+}
+
+
+.left_column{
+  width: 240px;
+  text-align: center;
+  margin-top: -80px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 30px; /* THIS is the spacing between image and links */
+}
+
+.profile-photo{
+  width: 170px;
+  height: auto;
+  display: block;
+  margin: 0; /* kill any default margins */
+}
+
+.sidebar_links{
+  width: 170px;
+  margin: 0; /* remove margin-top */
+  padding: 0;
+  line-height: 1.2;
 }
