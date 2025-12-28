@@ -96,3 +96,53 @@ body {
   color: #777;
   text-align: right;
 }
+
+.thoughts_page {
+    padding-left: 0;    /* remove big page padding that shifts the whole block */
+    padding-right: 100px;
+}
+
+.thoughts_page h1 {
+    text-align: center; /* keep title centered */
+    margin: 0 0 16px;
+}
+
+/* indent only the paragraphs */
+.thoughts_page p {
+    line-height: 0;
+    margin-left: 250px;                          /* move paragraphs in from left */
+    max-width: calc(100% - 250px - 24px);        /* optional: keep line length readable */
+    margin-bottom: 12px;
+}
+
+.thoughts_page p.main_text {
+  margin-top: 50px;
+  line-height: 1.7;
+  justify-content: baseline;
+}
+
+.photos_page {
+  padding-left: 0;
+  padding-right: 100px;
+}
+
+.photos_page h1 {
+  text-align: center;
+  margin: 0 0 16px;
+}
+
+/* make photo entries consistent and responsive */
+.photos_page .photo-entry {
+  overflow: hidden;            /* hide overflow if image is larger */
+  max-width: 700px;            /* optional container width */
+  margin: 0 0 24px;            /* spacing between entries */
+  border-radius: 6px;          /* optional rounded corners */
+}
+
+.photos_page .photo-entry img {
+  display: block;
+  width: 100%;        /* fill available width */
+  height: auto;       /* preserve aspect ratio, no cropping */
+  max-height: 60vh;   /* prevents extremely tall images from overflowing */
+  object-fit: contain;
+}
