@@ -97,6 +97,23 @@ body {
   text-align: right;
 }
 
+/* back to home link styling */
+.back-link {
+    margin: 20px 0 20px 0;
+    font-size: 14px;
+}
+
+.back-link a {
+    color: #0000ee;
+    text-decoration: underline;
+    display: inline-block;
+    margin-left: 350px;
+}
+
+.back-link a:hover {
+    color: #551a8b;
+}
+
 .thoughts_page {
     padding-left: 0;    /* remove big page padding that shifts the whole block */
     padding-right: 100px;
